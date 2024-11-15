@@ -1,0 +1,29 @@
+<script>
+  class animals {
+    constructor(name) {
+      this.name = name;
+    }
+
+    makesound() {
+      throw new Error("be must use this function a make a sound ");
+    }
+  }
+
+  class dog extends animals {
+    constructor(name, color) {
+      super(name);
+      this.color = color;
+    }
+    makesound() {
+      return "Woof woof";
+    }
+  }
+
+  let hello = new dog("charli", "smoke-white");
+
+  try {
+    console.log(hello.makesound());
+  } catch (e) {
+    console.log(e);
+  }
+</script>
