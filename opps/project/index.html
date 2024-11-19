@@ -1,0 +1,94 @@
+<script>
+  class student {
+    constructor(name, mark, roll) {
+      this.name = name;
+      this.mark = mark;
+      this._roll = roll;
+    }
+  }
+
+  class raju extends student {
+    pre() {
+      let a = (this.mark / 500) * 100;
+      return a;
+    }
+
+    get updateRoll() {
+      return this._roll;
+    }
+    set updateRoll(e) {
+      return (this._roll = e);
+    }
+    result() {
+      console.log(`
+        name       : ${this.name}
+        roll       : ${this._roll}
+        mark       : ${this.mark}
+        percentage : ${this.pre()}%
+  
+     
+        `);
+    }
+  }
+
+  class raja extends student {
+    pre() {
+      let a = (this.mark / 500) * 100;
+      return a;
+    }
+
+    get updateRoll() {
+      return this._roll;
+    }
+    set updateRoll(e) {
+      return (this._roll = e);
+    }
+    result() {
+      console.log(`
+    name       : ${this.name}
+    roll       : ${this._roll}
+    mark       : ${this.mark}
+    percentage : ${this.pre()}%
+
+ 
+    `);
+    }
+  }
+
+  class raj extends student {
+    pre() {
+      let a = (this.mark / 500) * 100;
+      return a;
+    }
+
+    get updateRoll() {
+      return this._roll;
+    }
+    set updateRoll(e) {
+      return (this._roll = e);
+    }
+    result() {
+      console.log(`
+    name       : ${this.name}
+    roll       : ${this._roll}
+    mark       : ${this.mark}
+    percentage : ${this.pre()}%
+
+ 
+    `);
+    }
+  }
+
+  let Raju = new raju("Raju", 420, 1);
+  let Raja = new raja("Raja", 400, 2);
+  let Raj = new raj("Raj", 350, 3);
+
+  Raju.result();
+  // Raju.updateRoll = 5;
+  // console.log(`update roll : ${Raju.updateRoll}`);
+
+  Raja.result();
+  Raj.result();
+
+  //   console.log(Raj.pre());
+</script>

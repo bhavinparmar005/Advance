@@ -1,0 +1,43 @@
+<script>
+  class Animal {
+    constructor() {
+      this._color;
+    }
+
+    makeSound() {
+      console.log("Some Sound of Animals");
+    }
+
+    set animalColor(color) {
+      return (this._color = color);
+    }
+
+    get animalColor() {
+      return this._color;
+    }
+  }
+
+  class Dog extends Animal {
+    makeSound() {
+      console.log("Bhaw Bhaw");
+    }
+  }
+
+  class Cat extends Animal {
+    makeSound() {
+      console.log("Mew Mew");
+    }
+  }
+
+  class Cow extends Animal {
+    makeSound() {
+      console.log("Moo Moo");
+    }
+  }
+
+  const animals = [new Dog(), new Cat(), new Cow()];
+
+  animals.forEach((animal, index) => {
+    animal.makeSound();
+  });
+</script>
