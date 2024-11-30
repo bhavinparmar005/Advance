@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CallBack Hall Functions</title>
+  </head>
+  <body>
+    <script>
+      //problem to server data fatch
+
+    //   console.log("step :1");
+    //   setTimeout(() => {
+    //     console.log("step :2");
+    //   }, 2000);
+    //   console.log("step :3");
+
+      //solve to server data fatch problem to call back hall
+
+      console.log("step :- 1");
+
+      setTimeout(() => {
+        console.log("step :- 2");
+
+        setTimeout(() => {
+          console.log("step :- 3");
+
+          setTimeout(() => {
+            console.log("step :- 4");
+
+            setTimeout(() => {
+              console.log("step :- 5");
+
+              setTimeout(() => {
+                console.log("step :- 6");
+
+                setTimeout(() => {
+                  console.log("step :- 7");
+
+                  setTimeout(() => {
+                    console.log("step :- 8");
+                    setTimeout(() => {
+                      console.log("step :- 9");
+                      setTimeout(()=>{
+                        console.log("Complet data faching in servar");
+                      },1000)
+                    }, 1000);
+                  }, 1000);
+                }, 1000);
+              }, 1000);
+            }, 1000);
+          }, 1000);
+        }, 1000);
+      }, 2000);
+    </script>
+  </body>
+</html>

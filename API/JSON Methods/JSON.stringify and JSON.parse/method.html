@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+            let fackApi= async ()=>{
+              let url = "https://fakestoreapi.com/products/2";
+
+                 try{
+                    let res = await fetch(url)
+                    let fachData =await res.json();
+             
+                    fachData.forEach((Element,index)=>{
+                      console.log(Element,index);
+                    })
+
+                    
+                    }catch(err){
+                        console.log(err);
+
+                    }
+
+            }
+            fackApi();
+    </script>
+  </body>
+</html>
