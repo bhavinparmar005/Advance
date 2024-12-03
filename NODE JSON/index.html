@@ -1,0 +1,14 @@
+<script>
+    async function get() {
+        try {
+            let url = await fetch("http://localhost:3000/posts");
+            let data = await url.json();
+            let final=JSON.stringify(data);
+            console.log(final);
+        } catch (arorr) {
+            console.log(arorr);
+        }
+    }
+
+    get();
+</script>
